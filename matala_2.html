@@ -1,0 +1,55 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 1: Elrom Ben Ami [id: 316268283], Student 2: Rotem Ardani [id: 315076653] </title>
+    <link href="matala_2.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+</head>
+<body>
+  <button class="styled-button">Welcome to our Memory Game!</button>
+  <br> <br>
+  <form id="game-form">
+    <label for="player-name"><u>Enter your name:</u></label>
+    <input type="text" id="player-name" required>
+    <br>
+    <br>
+    <label for="card-amount"><u>Cards number (1-60):</u></label>
+    <input type="number" id="card-amount" min="1" max="60" required>
+    <br>
+   <br>
+    <button type="submit"><b>Press to Start</b> </button>
+  </form> <br><br>
+
+  <div id="PlayerName"> <b></b></div><br>
+
+  <div id="game-container">
+  </div><br><br>
+
+  <table id="score-table">
+    <caption><h1><u>Score Table:</u></h1></caption>
+    
+    <thead>
+      <tr>
+  
+        <th>Name</th>
+        <th>Time (seconds)</th>
+        <th>Number of Matches</th>
+      </div>
+      </tr>
+    </thead>
+    <tbody id="score-table-body"></tbody>
+  </table> <br>
+  
+  <button id="reset-button"> <b> Reset Table</b></button>
+  <button id="end-game-button">End game</button>
+
+<script src="matala_2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(325deg,  #0082fc 0%,#ce00fc 50%,#00fcd6 100%);
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #38c3c3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#game-container {
+  background-color:rgb(157, 231, 234);
+  background-position: relative;
+  background-size: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#PlayerName{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #b86cb3;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card.flip {
+  background-color: #c492b3;
+  color: #fff;
+}
+
+.timer {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#end-game-button {
+  margin-top: 20px;
+  display: none;
+}
+
+table {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #333;
+  text-align: center;
+ 
+}
+.leader {
+background-color: rgb(10, 41, 216);
+font-weight: bold;
+}
+
+
+.styled-button {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.styled-button.finish {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 50px 50px 50px 50px;
+  background-color: #59c9c5;
+  color: #fff;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  margin: 0;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: none;
+  animation:none;
+
+}
+
+
+.styled-button::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px 10px rgba(76, 175, 80, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.styled-button:hover::after {
+  opacity: 1;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  150% {
+    transform: scale(1);
+  }
+}
+
+.styled-button-animation {
+  animation: pulse-animation 1s infinite;
+}
+
